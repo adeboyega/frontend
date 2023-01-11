@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+          .btn{
+            @apply p-2 text-xs rounded shadow-lg
+          }
+        }
+      </style>
+</head>
+<body>
+    <header class="showcase text-white flex justify-center sm:bg-blue-700">
+        <div class="container sm:grid sm:p-2 w-3/5">
+            <nav class="sm: flex justify-between sm:mb-4 sm:p-2 ">
+                <h1 class="logo font-bold">My Website</h1>
+                <ul class="sm:flex gap-2 text-xs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <div class="showcase-content flex sm:p-2">
+                <div class="grid gap-3 ">
+                    <h1 class="font-bold text-4xl ">Make Your Marketing Real</h1>
+                    <p class="my-1 text-xs">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Aut eius minima consequuntur saepe laborum vitae est,
+                          repellendus quibusdam modi accusantium.
+                    </p>
+                    <div>
+                        <a href="#" class="btn-primary btn bg-blue-500">Learn More</a>
+                        <a href="#" class="btn-secondary btn bg-orange-400">Sign up</a>
+                    </div>
+                    
+                </div>
+                <img src="/home-2-img.png" class="h-60" alt="">
+            </div>
+        </div>
+    </header>
+</body>
+</html>
