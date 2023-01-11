@@ -1,0 +1,55 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    header{
+        display: flex;
+        background-color: $primary-color;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        color: white;
+        width: 60%;
+        margin: 1rem 0px;
+        border: 1px solid black;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+
+        .showcase-content{
+            display: flex;
+            font-size: small;
+        }
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li{
+            margin-left:30px ;
+        }
+    }
+    img{
+        height: 15rem;
+        object-fit: cover;
+        contain: content;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
