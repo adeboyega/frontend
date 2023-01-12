@@ -19,7 +19,6 @@ body .container {
   color: white;
   width: 60%;
   margin: 1rem 0px;
-  border: 1px solid black;
   align-items: center;
   text-align: center;
   padding: 10px;
@@ -31,21 +30,60 @@ body .container .showcase-content {
 body nav {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+}
+body nav div ul {
+  display: none;
+}
+body nav div button {
+  display: none;
 }
 body nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
+body nav h1 {
+  font-size: medium;
+}
 body nav li {
   margin-left: 30px;
-}
-body img {
-  height: 15rem;
-  object-fit: cover;
-  contain: content;
+  font-size: x-small;
 }
 body a {
   text-decoration: none;
   color: white;
+}
+body #section1 {
+  display: flex;
+  text-align: left;
+  margin: 10px 0px;
+}
+body #section1 h1 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+body #section1 p {
+  margin-top: 10px;
+  font-size: x-small;
+}
+body #section1 div {
+  margin-top: 20px;
+}
+body #section1 div .btn-primary {
+  background-color: #5b97f7;
+  font-size: x-small;
+  padding: 10px;
+  border-radius: 5px;
+}
+body #section1 div .btn-secondary {
+  background-color: orange;
+  font-size: x-small;
+  padding: 10px;
+  border-radius: 5px;
+}
+body #section1 img {
+  height: 20rem;
+  object-fit: cover;
+  contain: content;
 }/*# sourceMappingURL=styles.css.map */
