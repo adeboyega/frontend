@@ -18,21 +18,35 @@
         }
       </style>
 </head>
-<body class="bg-red-500">
-    <header class="showcase text-white flex justify-center sm:bg-blue-700 h-3/5">
-        <div class="container sm:grid sm:p-2 w-3/5 h-full">
-            <nav class="sm: flex justify-between sm:mb-4 sm:p-2 ">
-                <h1 class="logo font-bold">My Website</h1>
-                <ul class="sm:flex gap-2 text-xs">
+<body class="">
+    <header class="showcase text-white flex sm:bg-blue-700 h-3/5 py-6">
+        <div class="container p-2 sm:grid sm:p-2 w-3/5 h-3/5 bg-blue-700 mx-auto ">
+            <nav class="sm: flex justify-between sm:mb-4 sm:p-2">
+                <div class="flex justify-between w-full relative">
+                    <h1 class="logo font-bold">My Website</h1>
+                    <ul class="hidden menu block bg-blue-600 p-2 absolute top-6 space-y-6 w-full text-xs py-5">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                    <button class="menu-btn">
+                        <svg class="sm:hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                    </button>
+                    
+                </div>
+                
+                <ul class="hidden sm:flex space-x-3 text-xs">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                 </ul>
             </nav>
-            <div class="showcase-content flex sm:p-2">
-                <div class="grid gap-3 ">
-                    <h1 class="font-bold text-4xl ">Make Your Marketing Real</h1>
-                    <p class="my-1 text-xs">
+            <div class="block space-y-6 mt-6 sm:flex sm:p-2 ">
+                <div class="block text-center sm:text-left space-y-8  ">
+                    <h1 class="font-bold text-4xl text-left ">Make Your Marketing Real</h1>
+                    <p class="my-1 text-xs text-left">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                          Aut eius minima consequuntur saepe laborum vitae est,
                           repellendus quibusdam modi accusantium.
@@ -47,5 +61,14 @@
             </div>
         </div>
     </header>
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const menu = document.querySelector('.menu')
+
+        menubtn.addEventListener('click',()=>{
+            menu.classList.toggle('hidden')
+
+        })
+    </script>
 </body>
 </html>
