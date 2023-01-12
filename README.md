@@ -1,1 +1,1 @@
-# frontend fully responsive done with tailwindcss
+# frontend fully responsive done with tailwindcss and redone with scss 
